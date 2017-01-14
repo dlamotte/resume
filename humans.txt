@@ -1,0 +1,10 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Dan LaMotte @dlamotte_
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, Normalize.css
