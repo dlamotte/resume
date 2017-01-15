@@ -1,9 +1,20 @@
+BUCKET ?= dlamotte.io
+
 help:
 	@echo 'usage: make [target]'
 	@echo ''
+	@echo '    deploy      deploy updated resume'
 	@echo '    help        this help document'
 	@echo '    serve       start development server'
 	@echo ''
+
+deploy:
+	find *.html -type f -exec \
+		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/html \;
+	find *.txt -type f -exec \
+		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/plain \;
+	find css -type f -exec \
+		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/css \;
 
 serve:
 	browser-sync start --server --files "css/*.css"
