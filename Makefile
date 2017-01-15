@@ -9,11 +9,11 @@ help:
 	@echo ''
 
 deploy:
-	find *.html -type f -exec \
+	cd src && find *.html -type f -exec \
 		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/html \;
-	find *.txt -type f -exec \
+	cd src && find *.txt -type f -exec \
 		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/plain \;
-	find css -type f -exec \
+	cd src && find css -type f -exec \
 		aws s3api put-object --bucket $(BUCKET) --key {} --body {} --content-type text/css \;
 
 serve:
