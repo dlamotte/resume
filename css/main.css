@@ -88,21 +88,204 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+article {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow:
+      0 1px 1px rgba(0,0,0,0.15),
+      0 10px 0 -5px #fafafa,
+      0 10px 1px -4px rgba(0,0,0,0.15),
+      0 20px 0 -10px #fafafa,
+      0 20px 1px -9px rgba(0,0,0,0.15);
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 700px;
+}
 
+body {
+  background-color: #eee;
+  padding-bottom: 25px;
+}
 
+em {
+  color: #aaa;
+}
 
+h1 {
+  font-weight: normal;
+  font-family: 'Cousine', monospace;
+  font-size: 36px;
+  margin: 10px 0 0;
+}
 
+h4 {
+  margin: 3px 0 5px;
+}
 
+h4.title-change {
+  color: #cf5300;
+  font-weight: normal;
+}
 
+header {
+  border-bottom: 3px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+}
 
+header a {
+  color: #888;
+  text-decoration: none;
+}
 
+header a:hover {
+  color: #555;
+  text-decoration: underline;
+}
 
+header p {
+  font-size: 14px;
+  margin: -6px 0 5px;
+}
 
+html {
+  font-family: sans-serif;
+}
 
+p {
+  margin: 0 0 10px;
+}
 
+section {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
 
+table {
+  table-layout: fixed;
+  width: 100%;
+}
 
+td {
+  vertical-align: top;
+}
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location {
+  color: #aaa;
+  font-size: 12px;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+.table-c1 {
+  width: 75px;
+}
+
+.table-c2 {
+  width: 49%;
+}
+
+.table-c3 {
+  width: 49%;
+}
+
+.table-c4 {
+  width: 65px;
+}
+
+.text-hi {
+  color: #cf5300;
+}
+
+.text-lead {
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-low {
+  color: #888;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.timeline {
+  position: relative;
+  height: 50px;
+}
+
+.timeline-arrow-up-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.timeline-arrow-up {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 40px solid #eee;
+  height: 0;
+  width: 0;
+
+  position: relative;
+  left: -13px;
+  top: -40px;
+}
+
+.timeline-box {
+  background-color: rgba(255, 255, 255, .5);
+  color: #111;
+  font-family: serif;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 60px;
+
+  position: relative;
+  left: -30px;
+  z-index: 10;
+}
+
+.timeline-box-box {
+  position: absolute;
+  left: 50%;
+  top: -15px;
+}
+
+.timeline-box-line {
+  border-top: 2px solid #cf5300;
+}
+
+.timeline-line {
+  border-right: 4px solid #eee;
+
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  bottom: -1px;
+}
+
+.timeline-line-half {
+  top: 50%;
+}
+
+@media print {
+    a[href] span {
+      display: none;
+    }
+    a[href]:after {
+        content: attr(href);
+    }
+}
 
 /* ==========================================================================
    Helper classes
@@ -220,6 +403,7 @@ n-width: 35em) {
     blockquote:first-line,
     li:first-line {
         background: transparent !important;
+        /*
         color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
@@ -231,9 +415,11 @@ n-width: 35em) {
         text-decoration: underline;
     }
 
+    /*
     a[href]:after {
         content: " (" attr(href) ")";
     }
+    */
 
     abbr[title]:after {
         content: " (" attr(title) ")";
