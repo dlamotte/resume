@@ -183,6 +183,10 @@ ul {
   vertical-align: middle;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .table-c1 {
   width: 75px;
 }
@@ -279,10 +283,10 @@ ul {
 }
 
 @media print {
-    a[href] span {
+    a[href^=http] span {
       display: none;
     }
-    a[href]:after {
+    a[href^=http]:after {
         content: attr(href);
     }
 }
