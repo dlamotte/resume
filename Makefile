@@ -21,6 +21,6 @@ ensure-cert:
 	python aws-letsencrypt.py dlamotte.io-config E6BWM508RGNV6 lamotte85@gmail.com dlamotte.io --production
 
 serve:
-	browser-sync start --server --files "css/*.css"
+	cd src && browser-sync start --server --files "css/*.css"
 
 .PHONY: deploy ensure-cert help serve
