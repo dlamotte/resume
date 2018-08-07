@@ -176,6 +176,11 @@ ul {
   margin: 0;
 }
 
+.list {
+  list-style: disc;
+  padding-left: 25px;
+}
+
 .location {
   color: #aaa;
   font-size: 12px;

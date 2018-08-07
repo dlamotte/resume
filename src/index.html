@@ -19,7 +19,7 @@
           <header class="text-right">
             <h1>Dan <strong class="text-hi">LaMotte</strong></h1>
             <p class="text-low">
-              Software &middot; Engineer &middot; DevOps
+              Software &middot; Engineer &middot; Dev &middot; Ops &middot; SRE
               <br>
               <span class="nowrap">
                 <i class="fa fa-github"></i>
@@ -45,10 +45,9 @@
 
           <section>
             <p class="text-lead">
-              Passionate self-taught Engineer and proven leader with
-              an interest in solving problems with technology and developing
-              strong teams. Good communicator via many mediums including
-              Slack/IRC, email, and presentations.
+              Passionate self-taught engineer with a track record for building
+              strong teams and significantly increasing productivity through
+              automation and tooling at all levels of the stack.
             </p>
           </section>
 
@@ -70,10 +69,11 @@
                 <td>
                   <ul>
                     <li><strong class="text-hi">Experience</strong></li>
-                    <li>AWS (~1 year)</li>
-                    <li>Kubernetes/Docker (~1 year)</li>
-                    <li>Networking (~1 year)</li>
-                    <li>Infrastructure as Code (~1 year)</li>
+                    <li>Golang (~1 year)</li>
+                    <li>AWS (~2 years)</li>
+                    <li>Kubernetes/Docker (~2 years)</li>
+                    <li>Networking (~2 years)</li>
+                    <li>Infrastructure as Code (~2 year)</li>
                     <li>Linux (~10 years)</li>
                     <li>Python (5+ years)</li>
                     <li>Javascript, HTML, CSS (2+ years)</li>
@@ -85,7 +85,7 @@
                     <strong class="text-hi">
                       Daily Use (unordered)
                     </strong>
-                    Github, terminal, vim, zsh, git, dropbox, box, G(oogle)-Suite, JIRA, Confluence, Bitbucket, Microsoft Office Suite, Concur, Macbook, homebrew, postgres, ssh, tmux, make, IRC, Slack, and Trello.
+                    Github, terminal, vim, zsh, git, dropbox, G(oogle)-Suite, JIRA, Confluence, Bitbucket, Microsoft Office Suite, Concur, Macbook, homebrew, postgres, ssh, tmux, make, IRC, and Slack.
                   </p>
                 </td>
                 <td></td>
@@ -105,7 +105,8 @@
                   <p>
                     <strong class="text-hi">Passionate about</strong>
                     Infrastructure, Kubernetes/Docker, Open Source,
-                    Programming, Automation, CICD, Efficiency, Finances
+                    Programming, Automation, CICD, Efficiency, Personal
+                    Finances
                   </p>
                 </td>
                 <td>
@@ -113,7 +114,7 @@
                     <strong class="text-hi">
                       Preferred Work Environment
                     </strong>
-                    Version everything with git. Deploying with automation. Linux. Practicing Agile or open to practicing it. Macbook Laptop. Using Slack. Open to remote workers.
+                    Version everything with git. Deploying with CICD. Linux. Practicing Agile. Macbook Laptop. Using Slack. Open to remote workers.
                   </p>
                 </td>
                 <td></td>
@@ -125,6 +126,37 @@
                   <div class="timeline-box-box">
                     <div class="timeline-box">
                       <em>present</em>
+                      <div class="timeline-box-line">2017</div>
+                    </div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <h4>Lead small team deploying Kubernetes/Docker on-premises</h4>
+                  <p>
+                    We supported a special internal initiative to utilize
+                    docker and kubernetes.  We worked with the team to buy
+                    hardware to meet their needs and ran kubernetes on bare
+                    metal.  Including AWS, we ran 3 separate kubernetes
+                    clusters.
+                  </p>
+                  <p>
+                    The cluster was also designed to meet ever growing
+                    challenges of our CI pipeline.  Specifically, artifact
+                    storage was particularly slow.  We utilized Datacenter
+                    SSDs, distributed storage via GlusterFS and ECMP'd VIPs to
+                    provide a foundation for a highly scalable storage
+                    solution all running in kubernetes.
+                  </p>
+                </td>
+                <td class="location text-right">Remote<br>Kansas</td>
+              </tr>
+              <tr>
+                <td class="timeline">
+                  <div class="timeline-line">
+                  </div>
+                  <div class="timeline-box-box">
+                    <div class="timeline-box">
+                      <em>2017</em>
                       <div class="timeline-box-line">2016</div>
                     </div>
                   </div>
@@ -132,15 +164,29 @@
                 <td colspan="2">
                   <h4>Lead small team into AWS and Kubernetes/Docker</h4>
                   <p>
-                    Even with significant compute on premise, we were unable
-                    to provide a CICD Pipeline with acceptable turnaround
-                    time. Requests to the pipeline queued for hours (days in
-                    some cases) and with a workforce of 400 engineers, we
-                    needed to scale to meet demand. I was charged to architect
-                    and execute increasing capacity by using AWS. I started us
-                    into AWS with a keen eye to use Kubernetes/Docker to avoid
-                    vendor lock-in.
+                    We utilized tools like terraform, Cloud Custodian and
+                    Evident.io to achieve repeatable and secure environments
+                    that developers could directly utilize while maintaining
+                    security controls the business required.  Beyond that, we
+                    utilized Kubernetes to enable moving workloads between
+                    AWS and on-premises as well as cut down on AWS costs.
                   </p>
+                </td>
+                <td class="location text-right">Remote<br>Kansas</td>
+              </tr>
+              <tr>
+                <td class="timeline">
+                  <div class="timeline-line">
+                  </div>
+                  <div class="timeline-box-box">
+                    <div class="timeline-box">
+                      <em>&nbsp;</em>
+                      <div class="timeline-box-line">2016</div>
+                    </div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <h4 class="title-change">Architect &mdash; Sr Princ Software Engineer &mdash; Veritas</h4>
                 </td>
                 <td class="location text-right">Remote<br>Kansas</td>
               </tr>
@@ -190,6 +236,22 @@
                 </td>
                 <td colspan="2">
                   <h4>Lead small team developing/maintaining internal website</h4>
+                  <ul class="list">
+                    <li>
+                        Backlog Tool &mdash; Custom agile backlog tracking
+                        tool to meet the needs of a large 500+ engineer
+                        organization
+                    </li>
+                    <li>
+                        Boards &mdash; Custom reporting dashboard implemented
+                        using angular.js.  Complete with widgets and per
+                        widget settings.
+                    </li>
+                    <li>
+                        Metrics &mdash; Custom tooling for management to track
+                        abitrary metadata with employees for rollup reporting.
+                    </li>
+                  </ul>
                 </td>
                 <td class="location text-right">Remote<br>Kansas</td>
               </tr>
@@ -240,13 +302,13 @@
                   <h4>Developed and maintained internal website with significant traffic (500+ uniques daily)</h4>
                   <p>
                     The internal website started simple and grew in complexity
-                    due to meet demand. Tooling consists of: Python, Django,
+                    to meet demand. Tooling consists of: Python, Django,
                     RabbitMQ, Celery, Redis, nginx and PostgreSQL. I feel
                     strongly about avoiding all downtime and so all
                     deployments were automated to provide zero-downtime
                     upgrades. The site was highly tuned for performance and
                     efficiency of bandwidth to ensure high latency clients in
-                    India were able to use the site efficiently. It was the
+                    India were able to use the site productively. It was the
                     first site of its kind internally. After years of
                     developing it myself, management took notice and grew
                     investment which required leading, training and mentoring
