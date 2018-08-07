@@ -176,6 +176,18 @@ ul {
   margin: 0;
 }
 
+.brand-meta {
+  padding-top: 40px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 .list {
   list-style: disc;
   padding-left: 25px;
